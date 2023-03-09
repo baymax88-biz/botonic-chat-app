@@ -1,3 +1,6 @@
+import BotImage from "../assets/chatbot.svg";
+import { CustomTrigger } from './custom-trigger'
+
 export const webchat = {
   theme: {
     style: {
@@ -8,15 +11,16 @@ export const webchat = {
       height: 500,
       margin: "auto",
       backgroundColor: "white",
-      borderRadius: 8,
+      borderRadius: 4,
       boxShadow: "0 0 50px #C1CED7",
       overflow: "hidden",
-      fontFamily: "Arial",
+      fontFamily: "Open Sans",
       lineHeight: 1.3,
     },
+
     message: {
       bot: {
-        // image: BotImage,
+        image: BotImage,
         style: {
           color: "#333333",
           background: "#F1FAFD",
@@ -43,6 +47,6 @@ export const webchat = {
       },
     },
 
-    // customTrigger: CustomTrigger,
+    customTrigger: CustomTrigger,
   },
 };
