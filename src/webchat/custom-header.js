@@ -4,9 +4,8 @@ import { staticAsset } from "@botonic/react";
 import ResizeIcon from "../assets/resize-icon.svg";
 import MinimizeIcon from "../assets/minimize-icon.svg";
 
-export const CustomHeader = () => {
+const CustomHeader = () => {
   const onMinimize = () => {
-    console.log("dy-debug", Botonic);
     Botonic.close();
   };
 
@@ -47,3 +46,5 @@ export const CustomHeader = () => {
     </div>
   );
 };
+
+export default CustomHeader;

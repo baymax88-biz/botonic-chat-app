@@ -1,23 +1,13 @@
 import Welcome from "./actions/welcome";
-import ChosenPizza from "./actions/chosen-pizza";
-import ChosenPasta from "./actions/chosen-pasta";
+import FindApartment from "./actions/find_apartment";
 
 export const routes = [
   {
-    path: "welcome",
-    text: /hi|hello/,
+    payload: "start",
     action: Welcome,
-    childRoutes: [
-      {
-        path: "chosen-pizza",
-        payload: "pizza",
-        action: ChosenPizza,
-      },
-      {
-        path: "chosen-pasta",
-        payload: "pasta",
-        action: ChosenPasta,
-      },
-    ],
+  },
+  {
+    payload: "find_apartment",
+    action: FindApartment,
   },
 ];

@@ -1,10 +1,10 @@
 import React from "react";
-import { staticAsset } from "@botonic/react";
+import { staticAsset, WebchatContext } from "@botonic/react";
 
 import NormalTriggerImage from "../assets/trigger-normal.svg";
 import HoveredTriggerImage from "../assets/trigger-hovered.svg";
 
-export const CustomTrigger = () => {
+const CustomTrigger = () => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
@@ -14,7 +14,7 @@ export const CustomTrigger = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        style={{ height: 80, width: 80, cursor: "pointer" }}
+        style={{ height: 90, width: 90, cursor: "pointer" }}
         src={
           isHovered
             ? staticAsset(HoveredTriggerImage)
@@ -24,3 +24,5 @@ export const CustomTrigger = () => {
     </div>
   );
 };
+
+export default CustomTrigger;

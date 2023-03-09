@@ -1,24 +1,14 @@
-import { CustomTrigger } from "./custom-trigger";
-import { CustomHeader } from "./custom-header";
+import CustomCover from "./custom-cover";
+import CustomTrigger from "./custom-trigger";
+import CustomHeader from "./custom-header";
 import BotImage from "../assets/chatbot.svg";
 
 export const webchat = {
+  coverComponent: CustomCover,
+  enableUserInput: false,
   theme: {
-    style: {
-      position: "fixed",
-      right: 20,
-      bottom: 20,
-      width: 480,
-      height: 610,
-      margin: "auto",
-      backgroundColor: "#FFF",
-      borderRadius: 4,
-      boxShadow: "0 0 50px #C1CED7",
-      overflow: "hidden",
-      fontFamily: "Open Sans",
-      lineHeight: 1.3,
-    },
-
+    customHeader: CustomHeader,
+    customTrigger: CustomTrigger,
     message: {
       bot: {
         image: BotImage,
@@ -47,9 +37,35 @@ export const webchat = {
         },
       },
     },
-
-    customTrigger: CustomTrigger,
-    customHeader: CustomHeader,
+    replies: {
+      align: "center",
+      wrap: "nowrap",
+    },
+    reply: {
+      style: {
+        color: "#333",
+        width: "fit-content",
+        display: "flex",
+        background: "#FFF",
+        border: "1px solid #999",
+        borderRadius: 0,
+        marginRight: 12,
+        marginBottom: 12,
+        padding: "10px 24px",
+      },
+    },
+    style: {
+      position: "fixed",
+      right: 20,
+      bottom: 20,
+      width: 480,
+      height: 610,
+      margin: "auto",
+      backgroundColor: "#FFF",
+      borderRadius: 4,
+      boxShadow: "0 0 50px #C1CED7",
+      overflow: "hidden",
+      fontFamily: "Open Sans",
+    },
   },
-  enableUserInput: false,
 };
