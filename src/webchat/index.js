@@ -1,5 +1,6 @@
+import { CustomTrigger } from "./custom-trigger";
+import { CustomHeader } from "./custom-header";
 import BotImage from "../assets/chatbot.svg";
-import { CustomTrigger } from './custom-trigger'
 
 export const webchat = {
   theme: {
@@ -7,10 +8,10 @@ export const webchat = {
       position: "fixed",
       right: 20,
       bottom: 20,
-      width: 400,
-      height: 500,
+      width: 480,
+      height: 610,
       margin: "auto",
-      backgroundColor: "white",
+      backgroundColor: "#FFF",
       borderRadius: 4,
       boxShadow: "0 0 50px #C1CED7",
       overflow: "hidden",
@@ -48,5 +49,7 @@ export const webchat = {
     },
 
     customTrigger: CustomTrigger,
+    customHeader: CustomHeader,
   },
+  enableUserInput: false,
 };
