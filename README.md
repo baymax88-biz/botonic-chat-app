@@ -1,3 +1,3 @@
 # Botonic chatbot app
 
-Hayley by using [botonic](https://botonic.io/)
+Hayley template that is built by using [botonic](https://botonic.io/)
